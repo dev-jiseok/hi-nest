@@ -8,8 +8,8 @@ export class MoviesController {
   }
 
   @Get('/:id')
-  getOne(@Param('id') model: string){
-    return `This will return One moive with id: ${model}`;
+  getOne(@Param('id') movieID: string){
+    return `This will return One moive with id: ${movieID}`;
   }
 
   @Post()
@@ -18,12 +18,12 @@ export class MoviesController {
   }
 
   @Delete('/:id')
-  remove(@Param('id') model:string){
-    return `This will remove a movie with id: ${model}`;
+  remove(@Param('id') movieID:string){
+    return `This will remove a movie with id: ${movieID}`;
   }
 
   @Patch('/:id')
-  patch(@Param('id') model:string){
-    return `This will patch a movie with id: ${model}`;
+  patch(@Param('id') movieID:string){
+    return `This will patch a movie with id: ${movieID}`;
   }
 }
